@@ -1,4 +1,0 @@
-FROM petclicic-dep:latest
-RUN cd app && ./mvnw install -DskipTests
-WORKDIR /app
-ENTRYPOINT [ "cp", "target/spring-petclicic-2.6.0-SNAPSHOT.jar", "/output/app.jar"]
