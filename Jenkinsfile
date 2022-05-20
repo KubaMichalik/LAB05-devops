@@ -45,7 +45,7 @@ pipeline {
     post {
         success {
             echo 'Succeeded.'
-            archiveArtifacts artifacts: 'shared_volume/app.jar', fingerprint: true
+            archiveArtifacts artifacts: 'shared_volume/application-petclinic.jar', fingerprint: true
         }
         failure {
             echo 'Failed.'
